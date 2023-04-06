@@ -1,0 +1,18 @@
+
+@media only screen and (max-width: 600px) {
+    #ButtonAppBar{
+        padding-left: 1rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #ButtonAppBar{
+    display: none;
+    }
+    #BgAppbar{
+    display:flex;
+    justify-content: center;
+    }
+    #HamMenu{
+    display: flex;
+    }
+}
