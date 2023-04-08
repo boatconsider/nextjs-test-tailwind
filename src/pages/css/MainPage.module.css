@@ -57,7 +57,7 @@
     #ImageShoesSell{
         width:20rem;
         height:16rem;
-    
+
         
         }
     #AllSell{
@@ -287,11 +287,18 @@ flex-flow: column wrap;
         
     }
     #ButtonBuy{
-        width:20rem;
         margin-top:1rem;
+        width:20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
     }
     #AllSell{
         margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
             }
     #Become{
         margin-top:10rem;

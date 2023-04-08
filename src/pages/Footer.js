@@ -4,7 +4,7 @@ function Footer() {
  
   return (
     <>
-         <div className=" flex justify-center items-center w-full h-[20rem] bg-[#F6835F] text-white">
+         <div className=" flex justify-center items-center w-full h-[20rem] bg-[#F6835F] text-white mt-[3rem]">
     <div className=" flex flex-row " >         
 <div className ="text-3xl " id={styles.TextFooter}>
     <h1>product</h1>

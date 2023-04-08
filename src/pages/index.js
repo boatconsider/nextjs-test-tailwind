@@ -1,7 +1,7 @@
 import Appbar from "./AppBar";
 import Image from "next/image";
 import styles from "./css/MainPage.module.css";
-import Footer from "./Footer"
+import Footer from "./Footer";
 export default function Home() {
   return (
     <>
@@ -136,7 +136,7 @@ export default function Home() {
             id={styles.NewShoesSport}
           >
             <div
-              className="relative w-[28rem] h-[25rem] ml-[1rem] "
+              className="relative w-[28rem] h-[25rem] ml-[1rem] cursor-pointer hover:opacity-75 focus:opacity-75"
               id={styles.NewShoesSport}
             >
               <Image
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="relative w-[28rem] h-[25rem] ml-[1rem]"
+              className="relative w-[28rem] h-[25rem] ml-[1rem] cursor-pointer hover:opacity-75 focus:opacity-75"
               id={styles.NewShoesSport}
             >
               <Image src="/b.png" alt="" layout="fill" className="z-10" />
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
 
             <div
-              className="relative w-[28rem] h-[25rem] ml-[1rem]"
+              className="relative w-[28rem] h-[25rem] ml-[1rem] cursor-pointer hover:opacity-75 focus:opacity-75"
               id={styles.NewShoesSport}
             >
               <Image
@@ -184,7 +184,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="relative w-[28rem] h-[25rem] ml-[1rem]"
+              className="relative w-[28rem] h-[25rem] ml-[1rem] cursor-pointer hover:opacity-75 focus:opacity-75"
               id={styles.NewShoesSport}
             >
               <Image src="/vans.jpg" alt="" layout="fill" className="z-10" />
@@ -196,96 +196,107 @@ export default function Home() {
                   Old Skool
                 </h1>
               </div>
-              
             </div>
-            <div className="w-full h-[5rem] flex items-center justify-center" id={styles.TextWeekly}>
-          <h1 className="text-4xl font-bold">Our weekly pick</h1>
-        </div>
-          <div className="  w-full h-[30rem] mt-[2rem] ">
-  
-          <div className="flex flex-warp" id ={styles.AllSell}>
-            <div className="relative w-[28rem] h-[25rem] ml-[3rem]  " id ={styles.ImageShoesSell}>
-              <Image
-                src="/imgshoes.png"
-                alt=""
-                layout="fill"
-                className="z-10"
-                id={styles.ImageShoesSell2}
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
-                <h1 className="text-white text-4xl font-bold flex  ">
-                  Nike
-                </h1>
-                <h1 className="text-white text-4xl font-bold flex  ">
-                  the joyride
-                </h1>
-              </div>
+            <div
+              className="w-full h-[5rem] flex items-center justify-center"
+              id={styles.TextWeekly}
+            >
+              <h1 className="text-4xl font-bold">Our weekly pick</h1>
             </div>
-          
-            <div className="w-[50%] h-[auto] flex text-center  text-4xl font-bold flex-col   ">
-            <div  id ={styles.InfoSell}  >
-              <h1 className="">Nike- The Joyride</h1>
+            <div className="  w-full h-[30rem] mt-[2rem] ">
+              <div className="flex flex-warp" id={styles.AllSell}>
+                <div
+                  className="relative w-[28rem] h-[25rem] ml-[3rem]  "
+                  id={styles.ImageShoesSell}
+                >
+                  <Image
+                    src="/imgshoes.png"
+                    alt=""
+                    layout="fill"
+                    className="z-10"
+                    id={styles.ImageShoesSell2}
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
+                    <h1 className="text-white text-4xl font-bold flex  ">
+                      Nike
+                    </h1>
+                    <h1 className="text-white text-4xl font-bold flex  ">
+                      the joyride
+                    </h1>
+                  </div>
+                </div>
 
-              <h1 className="text-[#007D8B] ">$390</h1>
-              <div className="flex flex-row justify-center items-center">
-                <div className="flex text-start mr-[5.5rem] flex-col">
-                  <h1>Colour</h1>
-                  <div>
-                    <input
-                      type="radio"
-                      className="w-[2rem] h-[2rem] ml-[1rem]"
-                    ></input>
-                    <input
-                      type="radio"
-                      className="w-[2rem] h-[2rem] ml-[1rem]"
-                    ></input>
-                  </div>
-                </div>
-                <div className="flex text-center pl-[2rem] flex-col">
-                  <h1>Size</h1>
-                  <div>
-                    <select className="border outline-white">
-                      <option>38</option>
-                      <option>39</option>
-                      <option>40</option>
-                      <option>41</option>
-                      <option>42</option>
-                      <option>43</option>
-                      <option>44</option>
-                      <option>45</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-center items-center flex-col">
-                <Image
-                  src="/Group 20.png"
-                  alt=""
-                  width={500}
-                  height={500}
-                  className=""
-                />
-                <div className="pt-[1rem] text-white w-[31rem] h-[4.5rem] bg-lime-400 text-center  rounded-3xl" id={styles.ButtonBuy}>
-                  <button>Buy It Now!</button>
+                <div className="w-[50%] h-[auto] flex text-center  text-4xl font-bold flex-col   ">
+                  <div id={styles.InfoSell}>
+                    <h1 className="">Nike- The Joyride</h1>
+
+                    <h1 className="text-[#007D8B] ">$390</h1>
+                    <div className="flex flex-row justify-center items-center">
+                      <div className="flex text-start mr-[5.5rem] flex-col">
+                        <h1>Colour</h1>
+                        <div>
+                          <input
+                            type="radio"
+                            className="w-[2rem] h-[2rem] ml-[1rem] "
+                          ></input>
+                          <input
+                            type="radio"
+                            className="w-[2rem] h-[2rem] ml-[1rem]"
+                          ></input>
+                        </div>
+                      </div>
+                      <div className="flex text-center pl-[2rem] flex-col">
+                        <h1>Size</h1>
+                        <div>
+                          <select className="border outline-white">
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex justify-center items-center flex-col">
+                      <Image
+                        src="/Group 20.png"
+                        alt=""
+                        width={500}
+                        height={500}
+                        className=""
+                      />
+                      <div
+                        className="pt-[1rem] text-white w-[31rem] h-[4.5rem] bg-lime-400 text-center  rounded-3xl"
+                        id={styles.ButtonBuy}
+                      >
+                        <button>Buy It Now!</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
-      </div>
-    
+          <div
+            className="flex justify-center items-center flex-col  w-full h-[20rem] bg-lime-300"
+            id={styles.Become}
+          >
+            <div className=" ">
+              <h1 className="text-5xl" id={styles.Member}>
+                become a member and get 20% off
+              </h1>
+              <div className="flex justify-center items-center mt-3">
+                <button className="text-xl w-[18rem] h-[4.5rem] bg-white  outline-white rounded-3xl hover:bg-lime-400 hover:outline-lime-400 mt-[2rem] ">
+                  Sign up for free now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center items-center flex-col  w-full h-[20rem] bg-lime-300" id ={styles.Become}>
-      <div className=" ">
-        <h1 className="text-5xl"id={styles.Member}>become a member and get 20% off</h1>
-        <div className="flex justify-center items-center mt-3">
-        <button className="text-xl w-[18rem] h-[4.5rem] bg-white  rounded-3xl">Sign up for free now</button>
-        </div>
-      </div>
-      
-      </div>
-        <Footer/>
+          <Footer />
         </div>
       </div>
     </>
