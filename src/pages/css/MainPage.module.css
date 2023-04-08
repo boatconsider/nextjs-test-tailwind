@@ -304,7 +304,7 @@ flex-flow: column wrap;
         margin-top:10rem;
     }
     #Member{
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
     #TextFooter{
     padding-left:0;
@@ -315,5 +315,11 @@ flex-flow: column wrap;
         margin-left:1rem;
         font-size:1.2rem;
         }
+        #ImageShoesSell{
+            width:20rem;
+            height:16rem;
+            margin-left:-0.1rem;
+            
+            }
     }
 
