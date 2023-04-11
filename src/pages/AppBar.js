@@ -25,7 +25,7 @@ function AppBar() {
       <button  className="hover:bg-lime-300 rounded-md" onClick={() => router.push('/')}>
             Home
           </button>
-          <button className=" mt-1 hover:bg-lime-300 rounded-md">
+          <button className=" mt-1 hover:bg-lime-300 rounded-md" onClick={() => router.push('/Shop')}>
             Shop
           </button>
  
